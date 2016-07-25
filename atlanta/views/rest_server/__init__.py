@@ -2,20 +2,7 @@
 
 """ Defines Atlanta's built-in REST interface """
 
-from flask import Flask
-from flask_restful import Api, Resource
-
-
-class PingTest(Resource):
-    """ Provides a minimal (almost nihilistic) REST endpoint """
-
-    def get(self, say='test'):
-        """ Returns a JSON oject and HTTP_200 """
-        return {'ping': say}
-
-    def post(self):
-        """ Still needs to be implemented """
-        pass
+from eve import Eve
 
 
 class AtlantaREST(object):
@@ -26,15 +13,11 @@ class AtlantaREST(object):
     """
 
     app = None
-    api = None
 
     def __init__(self, name="atlanta"):
-        self.app = Flask(name)
-        self.api = Api(self.app)
-        self.api.add_resource(PingTest, '/ping', '/ping/<string:say>',
-                              endpoint='ping')
+        self.app = Eve()
 
     @classmethod
     def run(cls):
         atlanta = cls()
-        atlanta.app.run()
+        atlanta.app.run(host="192.168.1.137", port=5050)
