@@ -1,2 +1,2 @@
 eve>=0.6.4
-git+git@github.com:Project-0/lpm.git#egg=lpm
+-e git+git@github.com:Project-0/lpm.git#egg=lpm
