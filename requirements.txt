@@ -1,1 +1,2 @@
 eve>=0.6.4
+git+file:///srv/kvorak/lpm.git#egg=lpm
