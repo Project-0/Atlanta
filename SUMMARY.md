@@ -1,4 +1,4 @@
 # Summary
 
-* Atlanta REST API
+* [Atlanta REST API](docs/atlanta_rest_api.md)
 
