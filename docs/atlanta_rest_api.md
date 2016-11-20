@@ -1,2 +1,2 @@
-# Atlanta REST API
+# REST API
 
