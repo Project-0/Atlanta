@@ -1,5 +1,5 @@
 # Summary
 
-* [Atlanta REST API](docs/atlanta_rest_api.md)
+* [REST API](docs/atlanta_rest_api.md)
 * Design Document
 
