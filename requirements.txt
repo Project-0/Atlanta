@@ -1,2 +1,3 @@
 eve>=0.6.4
 -e git+git@github.com:Project-0/lpm.git#egg=lpm
+rabbitpy
